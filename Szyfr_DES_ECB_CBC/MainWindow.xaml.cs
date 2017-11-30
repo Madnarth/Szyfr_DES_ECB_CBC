@@ -30,7 +30,7 @@ namespace Szyfr_DES_ECB_CBC
         static byte[] iv;
         char[] bytesArr;
         static byte[] bytes;
-        public static string Deszyfrowanie(string encryptedString, string tryb, byte[] klucz)
+        public static string Deszyfrowanie(string zaszyfrowanyTekst, string tryb, byte[] klucz)
         {
             DESCryptoServiceProvider desProvider = new DESCryptoServiceProvider();
             if (tryb == "CBC")
@@ -44,9 +44,9 @@ namespace Szyfr_DES_ECB_CBC
             }
             desProvider.Padding = PaddingMode.PKCS7;
             desProvider.Key = klucz;
-            using (MemoryStream stream = new MemoryStream(Convert.FromBase64String(encryptedString)))
+            using (MemoryStream strumien = new MemoryStream(Convert.FromBase64String(zaszyfrowanyTekst)))
             {
-                using (CryptoStream cs = new CryptoStream(stream, desProvider.CreateDecryptor(), CryptoStreamMode.Read))
+                using (CryptoStream cs = new CryptoStream(strumien, desProvider.CreateDecryptor(), CryptoStreamMode.Read))
                 {
                     using (StreamReader sr = new StreamReader(cs, Encoding.ASCII))
                     {
@@ -72,14 +72,14 @@ namespace Szyfr_DES_ECB_CBC
             }
             desProvider.Padding = PaddingMode.PKCS7;
             desProvider.Key = klucz;
-            using (MemoryStream stream = new MemoryStream())
+            using (MemoryStream strumien = new MemoryStream())
             {
-                using (CryptoStream cs = new CryptoStream(stream, desProvider.CreateEncryptor(), CryptoStreamMode.Write))
+                using (CryptoStream cs = new CryptoStream(strumien, desProvider.CreateEncryptor(), CryptoStreamMode.Write))
                 {
                     byte[] data = Encoding.Default.GetBytes(czystyTekst);
                     cs.Write(data, 0, data.Length);
-                    cs.FlushFinalBlock(); // <-- Add this
-                    return Convert.ToBase64String(stream.ToArray());
+                    cs.FlushFinalBlock();
+                    return Convert.ToBase64String(strumien.ToArray());
                 }
             }
         }      
