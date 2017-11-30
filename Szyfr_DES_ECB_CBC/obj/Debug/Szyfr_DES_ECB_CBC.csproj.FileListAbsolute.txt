@@ -1,0 +1,14 @@
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\bin\Debug\Szyfr_DES_ECB_CBC.exe.config
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\bin\Debug\Szyfr_DES_ECB_CBC.exe
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\bin\Debug\Szyfr_DES_ECB_CBC.pdb
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.csprojResolveAssemblyReference.cache
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\MainWindow.g.cs
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\App.g.cs
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC_MarkupCompile.cache
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC_MarkupCompile.lref
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\MainWindow.baml
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.g.resources
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.Properties.Resources.resources
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.csproj.GenerateResource.Cache
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.exe
+E:\Dokumenty\GitHub\Szyfr_DES_ECB_CBC\Szyfr_DES_ECB_CBC\obj\Debug\Szyfr_DES_ECB_CBC.pdb
