@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -118,6 +119,33 @@ namespace Szyfr_DES_ECB_CBC
             bytesArr = TxtBoxKlucz.Text.ToCharArray();
             ASCIIEncoding.ASCII.GetBytes(bytesArr);
             bytes = ASCIIEncoding.ASCII.GetBytes(bytesArr);
+        }
+
+        private void ButtCzytajCzysty_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog otworzPlik = new OpenFileDialog();
+            if (otworzPlik.ShowDialog() == true)
+                TxtBoxNieszyf.Text = File.ReadAllText(otworzPlik.FileName);
+        }
+
+        private void ButtCzytajZaszyfrowany_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog otworzPlik = new OpenFileDialog();
+            if (otworzPlik.ShowDialog() == true)
+                TxtBoxZaszyf.Text = File.ReadAllText(otworzPlik.FileName);
+        }
+
+        private void ButtZapiszSzyfr_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.SaveFileDialog zapiszPlik = new Microsoft.Win32.SaveFileDialog();
+            zapiszPlik.FileName = "Szyfr";
+            zapiszPlik.DefaultExt = ".text";
+            zapiszPlik.Filter = "Text documents (.txt)|*.txt";
+
+            if (zapiszPlik.ShowDialog() == true)
+            {
+                File.WriteAllText(zapiszPlik.FileName, TxtBoxSzyf.Text);
+            }
         }
     }
 }

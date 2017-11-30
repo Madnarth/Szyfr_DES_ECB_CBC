@@ -16,6 +16,9 @@
         <Button x:Name="ButtSzyfruj" Content="Szyfruj" HorizontalAlignment="Left" Margin="232,94,0,0" VerticalAlignment="Top" Click="szyfruj" Height="44" Width="70" FontWeight="ExtraBold" FontSize="15" Background="GreenYellow"/>
         <Button x:Name="ButtDeszyf" Content="Deszyfruj" HorizontalAlignment="Left" Margin="227,344,0,0" VerticalAlignment="Top" Height="46" Width="80" Click="deszyfruj" FontWeight="ExtraBold" FontSize="15" Background="RoyalBlue"/>
         <Button x:Name="ButtKopiuj" Content="Kopiuj" HorizontalAlignment="Left" Margin="227,292,0,0" VerticalAlignment="Top" Height="46" Width="80" FontWeight="ExtraBold" FontSize="15" Background="Gold" Click="ButtKopiuj_Click"/>
+        <Button x:Name="ButtCzytajCzysty" Content="Wczytaj czysty tekst" HorizontalAlignment="Left" Margin="40,215,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="11" Background="Beige" Click="ButtCzytajCzysty_Click"/>
+        <Button x:Name="ButtCzytajZaszyfrowany" Content="Wczytaj zaszyfrowany tekst" HorizontalAlignment="Left" Margin="40,239,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="11" Background="Beige" Click="ButtCzytajZaszyfrowany_Click"/>
+        <Button x:Name="ButtZapiszSzyfr" Content="Zapisz zaszyfrowany tekst" HorizontalAlignment="Left" Margin="345,215,0,0" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="11" Background="Beige" Click="ButtZapiszSzyfr_Click"/>
 
         <Label x:Name="LabKlucz" Content="Klucz" HorizontalAlignment="Left" Margin="242,162,0,0" VerticalAlignment="Top" FontWeight="ExtraBold" FontSize="15"/>
         <Label x:Name="LabNieszyf" Content="Tekst nieszyfrowany" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" FontWeight="ExtraBold" FontSize="15"/>
